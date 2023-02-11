@@ -1,5 +1,5 @@
 # ComposeViewPager
-A Basic view pager made by Lazy Row in Jetpack compose. For those who just need a solution.
+A Basic view pager made by LazyRow in Jetpack compose. For those who just need a solution.
 
 [ViewPagerDemo.webm](https://user-images.githubusercontent.com/10572239/218255011-c47fdb24-a6af-4179-bdd2-deebf5a4ccd3.webm)
 
