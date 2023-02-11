@@ -11,9 +11,12 @@ A Basic view pager made by Lazy Row in Jetpack compose. For those who just need 
 @Composable
 fun PlayGroundScreen() {
     var position by remember { mutableStateOf<Int>(1) }
+    
     Column(modifier = Modifier.fillMaxSize(), horizontalAlignment = Alignment.CenterHorizontally) {
+        
         Text(text = "Indicator $position")
-        LazyRowViewPager(items = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8), onPositionChanged = {
+        
+        LazyRowViewPager (items = listOf(0, 1, 2, 3, 4, 5, 6, 7, 8), *onPositionChanged =* {
             position = it
         }) {
             Box(
@@ -24,7 +27,9 @@ fun PlayGroundScreen() {
                     .background(Color.Gray),
                 contentAlignment = Alignment.Center
             ) {
+            
                 Text(it.toString(), fontSize = 32.sp)
+                
             }
         }
 
